@@ -1,0 +1,29 @@
+tcpdump: listening on eno1, link-type EN10MB (Ethernet), capture size 262144 bytes
+1557465209.296342 IP (tos 0x0, ttl 64, id 4208, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [S], cksum 0xbe16 (correct), seq 3315030483, win 29200, options [mss 1460,sackOK,TS val 214321571 ecr 0,nop,wscale 7], length 0
+1557465209.296353 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [S.], cksum 0xe4fb (incorrect -> 0x5774), seq 3804538489, ack 3315030484, win 28960, options [mss 1460,sackOK,TS val 629520573 ecr 214321571,nop,wscale 7], length 0
+1557465209.296503 IP (tos 0x0, ttl 64, id 4209, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [.], cksum 0xf67b (correct), ack 1, win 229, options [nop,nop,TS val 214321571 ecr 629520573], length 0
+1557465209.296514 IP (tos 0x0, ttl 64, id 4210, offset 0, flags [DF], proto TCP (6), length 62)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [P.], cksum 0xe524 (correct), seq 1:11, ack 1, win 229, options [nop,nop,TS val 214321571 ecr 629520573], length 10
+1557465209.296518 IP (tos 0x0, ttl 64, id 7879, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [.], cksum 0xe4f3 (incorrect -> 0xf673), ack 11, win 227, options [nop,nop,TS val 629520573 ecr 214321571], length 0
+1557465209.296547 IP (tos 0x0, ttl 64, id 7880, offset 0, flags [DF], proto TCP (6), length 62)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [P.], cksum 0xe4fd (incorrect -> 0xe51c), seq 1:11, ack 11, win 227, options [nop,nop,TS val 629520573 ecr 214321571], length 10
+1557465209.296557 IP (tos 0x0, ttl 64, id 7881, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [F.], cksum 0xe4f3 (incorrect -> 0xf668), seq 11, ack 11, win 227, options [nop,nop,TS val 629520573 ecr 214321571], length 0
+1557465209.296673 IP (tos 0x0, ttl 64, id 4211, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [.], cksum 0xf667 (correct), ack 11, win 229, options [nop,nop,TS val 214321571 ecr 629520573], length 0
+1557465209.296724 IP (tos 0x0, ttl 64, id 4212, offset 0, flags [DF], proto TCP (6), length 1502)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [P.], cksum 0xea9d (incorrect -> 0x7f07), seq 11:1461, ack 12, win 229, options [nop,nop,TS val 214321571 ecr 629520573], length 1450
+1557465209.296728 IP (tos 0x0, ttl 64, id 4214, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.80.39758 > 172.21.198.81.8681: Flags [F.], cksum 0xf0bb (correct), seq 1461, ack 12, win 229, options [nop,nop,TS val 214321571 ecr 629520573], length 0
+1557465209.296743 IP (tos 0x0, ttl 64, id 7882, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [.], cksum 0xe4f3 (incorrect -> 0xf0a7), ack 1461, win 249, options [nop,nop,TS val 629520574 ecr 214321571], length 0
+1557465209.296750 IP (tos 0x0, ttl 64, id 7883, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.198.81.8681 > 172.21.198.80.39758: Flags [.], cksum 0xe4f3 (incorrect -> 0xf0a6), ack 1462, win 249, options [nop,nop,TS val 629520574 ecr 214321571], length 0
+
+12 packets captured
+12 packets received by filter
+0 packets dropped by kernel
